@@ -235,7 +235,6 @@ def main():
             else:
                 patience += 1
                 if patience > 100:
-                    # reddit2 400; other 100
                     if model_config['name'] == 'EbdGNN':
                         if epoch > model_config['pepochs'] + 128:
                             break
