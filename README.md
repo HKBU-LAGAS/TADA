@@ -19,7 +19,7 @@ you can create and activate the environments by following code :
     conda activate tada
     
 
-**Run**
+## Run
 
 if you want to reproduce the results of GNNs and GNNs+TADA., please run the following command:
 
