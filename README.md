@@ -1,6 +1,3 @@
-# TADA
-the official implementation of KDD2024 paper "Efficient Topology-aware Data Augmentation for High-Degree Graph Neural Networks"
-
 # TADA  
 
  ## instruction
@@ -33,3 +30,4 @@ if you want to reproduce the results of GNNs and GNNs+TADA., please run the foll
 
 ## Acknowledgment
 Our code is based on the official code of [Dspar](https://github.com/zirui-ray-liu/DSpar_tmlr) and [MGNN](https://github.com/GuanyuCui/MGNN/tree/main/src)
+.

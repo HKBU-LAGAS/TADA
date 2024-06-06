@@ -1,0 +1,122 @@
+name: EbdGNN
+
+params:
+  photo:
+    norm: true
+    loop: true
+    arch_name: EbdGNN
+    gnn_type: gcn2
+    architecture:
+      num_layers: 2
+      hidden_channels: 128
+      dropout: 0.
+      drop_input: false
+      batch_norm: true
+      residual: false
+      shared_weights: false
+      alpha: 0.1
+      theta: 0.5
+      gnn_norm: true 
+      gnn_self_loops: false
+    optim: adam
+    lr: 0.001
+    wd: 0.00001
+    epochs: 1500
+    pepochs: 128
+    bepochs: 128
+  
+  wikics:
+    norm: true
+    loop: true
+    arch_name: EbdGNN
+    gnn_type: gcn2
+    architecture:
+      num_layers: 2
+      hidden_channels: 128
+      dropout: 0.3
+      drop_input: true
+      batch_norm: true 
+      residual: false 
+      shared_weights: false
+      alpha: 0.1
+      theta: 0.5
+      gnn_norm: true 
+      gnn_self_loops: false
+    optim: adam
+    lr: 0.01
+    wd: 0.00005
+    epochs: 1500
+    pepochs: 128
+    bepochs: 128
+  
+  squirrel:
+    norm: true
+    loop: true
+    arch_name: EbdGNN
+    gnn_type:  gcn2
+    architecture:
+      num_layers: 2
+      hidden_channels: 128
+      dropout: 0.1
+      drop_input: true
+      batch_norm: false
+      residual: false
+      shared_weights: false
+      alpha: 0.
+      theta: 1.0
+      gnn_norm: true 
+      gnn_self_loops: false
+    optim: adam
+    lr: 0.05
+    wd: 0.0
+    epochs: 1500
+    pepochs: 128
+    bepochs: 128
+  
+  reddit2:
+    norm: false
+    loop: false
+    arch_name: EbdGNN
+    gnn_type: gcn2
+    architecture:
+      num_layers: 2
+      hidden_channels: 128
+      dropout: 0.5
+      drop_input: true
+      batch_norm: true
+      residual: false
+      shared_weights: false
+      alpha: 0.1
+      theta: 0.5
+      gnn_norm: false 
+      gnn_self_loops: false
+    optim: adam
+    lr: 0.01
+    wd: 0.0
+    epochs: 1500
+    pepochs: 128
+    bepochs: 128
+
+  proteins:
+    norm: true
+    loop: true
+    arch_name: EbdGNN
+    gnn_type: gcn2
+    architecture:
+      num_layers: 2
+      hidden_channels: 128
+      dropout: 0.5
+      batch_norm: true
+      residual: false
+      alpha: 0.2
+      theta: 0.5
+      gnn_norm: false
+      gnn_self_loops: false
+    optim: adam
+    lr: 0.01
+    epochs: 1500
+    pepochs: 128
+    bepochs: 128
+    adjust_lr: false
+    use_labels: false
+
