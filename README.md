@@ -10,9 +10,6 @@
 - cuda==12.1
 - torch_geometric==2.4.0
 
-
-## Basic Usage
-**Environment setting**
 you can create and activate the environments by following code :
 
     conda env create -f environments.yml
